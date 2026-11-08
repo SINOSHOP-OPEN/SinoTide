@@ -175,6 +175,83 @@ The project follows a **"Three-Step"** implementation path:
 
 ---
 
+---
+
+## 🧪 Simulation Code — Constant-Draft Flotation × Tidal Energy Capture
+
+> **This repository provides the algorithmic skeleton for constant-draft flotation and
+> tidal energy capture, together with a macro-scale hydrodynamic simulation script.**
+> **Run `python verify_tide.py` to test the buoyancy-compensation and
+> wave-energy-conversion criteria.**
+
+This is not a brochure — it is a calibrated ruler. All 35 criteria live inside the script;
+the exit code must be 0. *Humans may write prose; only code may write PASS.*
+
+```bash
+python verify_tide.py           # no third-party dependency (Python 3.8+)
+python verify_tide.py --no-fig  # works without matplotlib
+echo $?                         # 0 = all criteria passed, 1 = at least one failed
+```
+
+**Baseline: 35 PASS / 0 FAIL, EXIT = 0.**
+Full numbers: [`reports/复算报告_虚拟测试数据.md`](reports/复算报告_虚拟测试数据.md) (Chinese).
+
+### What it verifies
+
+| Group | Count | Content |
+| :--- | :---: | :--- |
+| **Hydrostatics & buoyancy compensation** | 16 | Analytical solution cross-checked by bisection; compensation ratio κ ≥ 0.95; residual vertical displacement ≤ 5% of the relative wave amplitude; ballast capacity sufficiency; monotonicity in the time constant; convergence under mesh refinement |
+| **Wave-energy capture & frequency isolation** | 16 | Wave power flux = 1/(32π); Falnes optimal PTO damping cross-checked by numerical sweep (< 1% error); at resonance the optimal damping equals the radiation damping; power derating under a stroke limit; transmissibility threshold at r = √2 |
+| **Discipline self-check** | 3 | No dimensional power/energy units in the output; virtual-data declaration and dimensionless convention must be written to disk |
+
+### Unit system: everything is dimensionless
+
+The repository contains **no dimensional engineering values**. Normalisation:
+ρ = g = H_s = D = 1, one tidal period = 1.
+
+| Quantity | Normalised value |
+| :--- | :--- |
+| Wave energy density E\* | 1/8 |
+| Deep-water group velocity cg\* | 1/(4π) |
+| Wave power flux per unit crest length Pw\* | 1/(32π) |
+| Time t\* | 1.0 = one tidal period |
+
+Converting back to SI requires the ρ, g, H_s, T_e and characteristic length of a specific
+site — those vary by site and belong to engineering calibration, which is deliberately
+**not** provided here.
+
+### Scope and boundaries (please read this part)
+
+**This is a skeleton, not a medical report.** It demonstrates that the *model is
+self-consistent and the criteria are reproducible*. It does **not** claim any real-site
+power output, displacement amplitude, or structural safety margin.
+
+Deliberately excluded:
+
+- **Dimensional results** — substituting a site's wave height, period and density would
+  amount to disclosing the design envelope;
+- **Underlying control parameters** — site-specific wave spectra, the exact release timing
+  of anchor weights, structural dimensions and calibration coefficients are unpublished
+  engineering implementation and are **not reflected in this open repository**;
+- **Multi-physics detail** — viscous and vortex damping, roll/pitch coupling, non-linear
+  mooring, structural fatigue.
+
+These are not released with the code and are not available through Issues or email.
+For joint research, please use the formal technical-cooperation channel
+(standards@sinoshop.org).
+
+### Change the numbers and run it again
+
+Edit the return value of `reference_case()` in `sim/virtualdata.py` — for example raise
+`tau_star` from 0.002 to 0.02. The residual displacement grows as `ωτ/√(1+(ωτ)²)` and the
+criteria will **honestly FAIL**.
+
+**Criteria that cannot fail are not criteria.**
+
+---
+
+---
+
 ## 🔗 Quick Links
 
 - 🏠 **Project Homepage**: [https://sinoshop-open.github.io/webpage/](https://sinoshop-open.github.io/webpage/)
