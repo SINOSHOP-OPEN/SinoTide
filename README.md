@@ -1,3 +1,12 @@
+<!-- SINOTIDE BACKLINK:BEGIN -->
+
+> 🧭 **This project is the underlying algorithm-validation base of [SinoSFT — Sea-Crossing Floating Tunnel Bridge Home](https://github.com/SINOSHOP-OPEN/sinosft)** (depth-keeping suspension & energy capture).
+> Main repository: **[SINOSFT · GitHub](https://github.com/SINOSHOP-OPEN/sinosft)** ｜ [SINOSFT · Gitee](https://gitee.com/sinoshop/SINOSFT) ｜ [🌐 SITE_MAP](./docs/SITE_MAP.md)
+
+<!-- SINOTIDE BACKLINK:END -->
+
+---
+
 # SinoTide — Tidal Power Computing Depth-Keeping Floating Bridge
 
 **Dual-Timescale Adaptive Suspension · Multi-Layer Data Center · PUE≤1.03 · Seven-Tier Safety System · World-Class Tidal Bore Test Platform**
