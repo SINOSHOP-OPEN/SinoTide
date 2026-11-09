@@ -1,4 +1,12 @@
+<!-- SINOSHOP GALAXY NAV:BEGIN -->
+
+> 🌐 [Project Homepage](https://sinoshop-open.github.io/webpage/) ｜ 🚀 [SINOSFT Main Repository](https://github.com/SINOSHOP-OPEN/sinosft) ｜ 🌊 [SINOTIDE Algorithm Repository](https://github.com/SINOSHOP-OPEN/sinotide) ｜ ⚓ [SINOPORT Floating Port](https://github.com/SINOSHOP-OPEN/SinoPORT) ｜ 🧪 [Simulation & Verification Repository](https://gitee.com/sinoshop/Sinoport-public)
+
+<!-- SINOSHOP GALAXY NAV:END -->
+
 # SinoTide 
+
+> 🧭 **This repository is the underlying algorithm-validation base of the [SINOSFT main repository](https://github.com/SINOSHOP-OPEN/sinosft)** (constant-draft flotation and tidal energy capture).
 
 #### Description
 潮汐发电算力定深浮桥 · 双时间尺度定深悬浮 · 立体数据中心 · PUE≤1.03 · 七重安全防护 · 世界级强涌潮验证平台
