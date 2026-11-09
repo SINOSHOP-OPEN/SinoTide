@@ -4,6 +4,12 @@
 
 <!-- SINOSHOP GALAXY NAV:END -->
 
+<!-- SINOSHOP LANG SWITCH:BEGIN -->
+
+> 🌏 **Language** ｜ [简体中文](./README.md) ｜ English (this page)
+
+<!-- SINOSHOP LANG SWITCH:END -->
+
 # SinoTide 
 
 > 🧭 **This repository is the underlying algorithm-validation base of the [SINOSFT main repository](https://github.com/SINOSHOP-OPEN/sinosft)** (constant-draft flotation and tidal energy capture).

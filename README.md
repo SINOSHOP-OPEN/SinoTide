@@ -4,6 +4,12 @@
 
 <!-- SINOSHOP GALAXY NAV:END -->
 
+<!-- SINOSHOP LANG SWITCH:BEGIN -->
+
+> 🌏 **Language** ｜ 简体中文 ｜ [English Version →](./README.en.md)
+
+<!-- SINOSHOP LANG SWITCH:END -->
+
 <!-- SINOTIDE BACKLINK:BEGIN -->
 
 > 🧭 **This project is the underlying algorithm-validation base of [SinoSFT — Sea-Crossing Floating Tunnel Bridge Home](https://github.com/SINOSHOP-OPEN/sinosft)** (depth-keeping suspension & energy capture).
