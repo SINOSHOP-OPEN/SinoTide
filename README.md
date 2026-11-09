@@ -1,3 +1,9 @@
+<!-- SINOSHOP GALAXY NAV:BEGIN -->
+
+> 🌐 [项目官网](https://sinoshop-open.github.io/webpage/) ｜ 🚀 [SINOSFT 主仓](https://github.com/SINOSHOP-OPEN/sinosft) ｜ 🌊 [SINOTIDE 算法仓](https://github.com/SINOSHOP-OPEN/sinotide) ｜ ⚓ [SINOPORT 悬浮港](https://github.com/SINOSHOP-OPEN/SinoPORT) ｜ 🧪 [代码仿真验证仓](https://gitee.com/sinoshop/Sinoport-public)
+
+<!-- SINOSHOP GALAXY NAV:END -->
+
 <!-- SINOTIDE BACKLINK:BEGIN -->
 
 > 🧭 **This project is the underlying algorithm-validation base of [SinoSFT — Sea-Crossing Floating Tunnel Bridge Home](https://github.com/SINOSHOP-OPEN/sinosft)** (depth-keeping suspension & energy capture).
